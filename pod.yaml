@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: metadata-service
+spec:
+  containers:
+  - name: metadata
+    image: metadata-service:latest
+    ports:
+      - containerPort: 8080
